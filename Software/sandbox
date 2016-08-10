@@ -1,0 +1,9 @@
+<span class="digit" id="heart">0</span>
+$('#heart').hide("slide",{direction:up},1000,function(){
+    $('#heart').html('1');
+    $('#heart').show("slide",{direction:down},1000)
+
+    })
+
+$(this).hide("slide", { direction: "down" }, 1000);
+BPM-LPG(rs)-Temp(C)-Accero

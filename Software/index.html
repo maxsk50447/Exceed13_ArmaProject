@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title> Arma Project </title>
+	<meta name="description" content="Kite Coming Soon HTML Template by Jewel Theme">
+	<meta name="author" content="Jewel Theme">
+
+	<!-- Mobile Specific Meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+
+	<!-- Bootstrap  -->
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- icon fonts font Awesome -->
+	<link href="assets/css/font-awesome.min.css" rel="stylesheet">
+
+	<!-- Custom Styles -->
+	<link href="assets/css/style.css" rel="stylesheet">
+	<link href="assets/css/animated.css" rel="stylesheet">
+
+	<!--[if lt IE 9]>
+	<script src="assets/js/html5shiv.js"></script>
+	<![endif]-->
+
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+	<script type="text/javascript" src="assets/js/gmaps.js"></script>
+	<link rel="stylesheet" href="assets/font-awesome-4.6.3/css/font-awesome.min.css">
+	<script type="text/javascript">
+		var map;
+		$(document).ready(function() {
+			map = new GMaps({
+				el: '#map',
+				lat: 14.00701,
+				lng: 99.98390,
+				zoom: 13,
+				zoomControl: true,
+				zoomControlOpt: {
+					style: 'SMALL',
+					position: 'TOP_LEFT'
+				},
+				panControl: false,
+				streetViewControl: false,
+				mapTypeControl: false,
+				overviewMapControl: false
+
+			});
+			map.addMarker({
+				lat: 14.00701,
+				lng: 99.98390,
+				title: 'Arma'
+			});
+
+		});
+	</script>
+	</script>
+
+	<script src="http://canvasjs.com/assets/script/canvasjs.min.js"></script>
+	<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/mathjs/3.2.1/math.js">
+	</script>
+	<script type="text/javascript" src="assets/js/comm.js">
+	</script>
+</head>
+
+<body>
+
+
+	<!-- Preloader -->
+	<div id="preloader">
+		<div id="loader">
+			<div class="dot"></div>
+			<div class="dot"></div>
+			<div class="dot"></div>
+			<div class="dot"></div>
+			<div class="dot"></div>
+			<div class="dot"></div>
+			<div class="dot"></div>
+			<div class="dot"></div>
+			<div class="lading"></div>
+		</div>
+	</div>
+	<!-- /#preloader -->
+	<!-- Preloader End-->
+
+
+	<!-- Main Menu -->
+	<div id="main-menu" class="navbar navbar-default navbar-fixed-top" role="navigation">
+
+		<div class="navbar-header">
+			<!-- responsive navigation -->
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="sr-only">Toggle navigation</span>
+				<i class="fa fa-bars"></i>
+			</button>
+			<!-- /.navbar-toggle -->
+
+		</div>
+		<!-- /.navbar-header -->
+
+		<nav class="collapse navbar-collapse">
+			<!-- Main navigation -->
+			<ul id="headernavigation" class="nav navbar-nav">
+				<li class="active"><a href="#page-top">Home</a></li>
+				<li><a href="#about">Heart</a></li>
+				<li><a href="#subscribe">Where</a></li>
+				<li><a href="#contact">About</a></li>
+			</ul>
+			<!-- /.nav .navbar-nav -->
+		</nav>
+		<!-- /.navbar-collapse  -->
+	</div>
+	<!-- /#main-menu -->
+	<!-- Main Menu End -->
+
+
+	<!-- Page Top Section -->
+	<section id="page-top" class="section-style" data-background-image="images/background/home.jpg">
+		<div class="pattern height-resize">
+			<div class="container">
+				<h1 class="site-title">
+					Arma Project
+				</h1>
+				<!-- /.site-title -->
+				<h3 class="section-name">
+					<span>
+						Future Healthier Life
+					</span>
+				</h3>
+				<!-- /.section-name -->
+				<div id="groupname" style="text-align:center">By ex-variable</div>
+				<div id="time_countdown" class="time-count-container">
+
+					<div class="col-sm-1"></div>
+					<!-- heartRate -->
+					<div class="col-sm-2">
+						<div class="time-box">
+							<div class="time-box-inner dash days_dash animated" data-animation="rollIn" data-animation-delay="300">
+								<span class="time-number">
+									<span id="heartRate">0</span>
+								</span>
+								<span class="time-name">bpm</span>
+							</div>
+						</div>
+					</div>
+
+					<!-- temperature -->
+					<div class="col-sm-2">
+						<div class="time-box">
+							<div class="time-box-inner dash hours_dash animated" data-animation="rollIn" data-animation-delay="600">
+								<span class="time-number">
+									<span class="digit" id="temperature">0</span>
+
+								</span>
+								<span class="time-name">Temp</span>
+							</div>
+						</div>
+					</div>
+
+					<!-- LPG -->
+					<div class="col-sm-2">
+						<div class="time-box">
+							<div id="lpgBlock" class="time-box-inner dash minutes_dash animated" data-animation="rollIn" data-animation-delay="900">
+								<span class="time-number">
+									<span class="glyphicon glyphicon-warning-sign"></span>
+								</span>
+								<span class="time-name">LPG Level</span>
+							</div>
+						</div>
+					</div>
+
+					<!-- health level -->
+					<div class="col-sm-2">
+						<div class="time-box">
+							<div id="hrBlock" class="time-box-inner dash seconds_dash animated" data-animation="rollIn" data-animation-delay="1200">
+								<span class="time-number">
+									<span class="glyphicon glyphicon-heart-empty"></span>
+								</span>
+								<span class="time-name">Health</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-sm-2">
+						<div class="time-box">
+							<div id="fallBlock" class="time-box-inner dash seconds_dash animated" data-animation="rollIn" data-animation-delay="1500">
+								<span class="time-number">
+									<span class="fa fa-ambulance"></span>
+								</span>
+								<span class="time-name">falling</span>
+							</div>
+						</div>
+
+					</div>
+					<!-- /.time-count-container -->
+
+
+					<div class="next-section">
+						<a class="go-to-about"><span></span></a>
+					</div>
+					<!-- /.next-section -->
+
+				</div>
+				<!-- /.container -->
+			</div>
+			<!-- /.pattern -->
+	</section>
+	<!-- /#page-top -->
+	<!-- Page Top Section  End -->
+
+
+	<!-- About Us Section -->
+	<section id="about" class="section-style" data-background-image="images/background/wthdog.jpg">
+		<div class="pattern height-resize">
+			<div class="container">
+				<h3 class="section-name">
+					<span>
+						Arma Heart
+					</span>
+				</h3>
+				<!-- /.section-name -->
+				<h2 class="section-title">
+					We Are dedicated
+				</h2>
+				<!-- /.Section-title  -->
+				<p class="section-description">
+					Don't worried. Look at this, Arma is still ok.
+				</p>
+				<!-- /.section-description -->
+
+				<div class="team-container">
+					<div class="row">
+						<div class="col-sm-4 hide-graph-default">
+							<div class="team-member">
+								<figure>
+									<img src="images/team/HR.jpg" alt="Team Member">
+									<figcaption>
+										<p class="member-name">Heart Rate</p>
+										<p class="designation">
+											show
+										</p>
+										<!-- /.designation -->
+
+									</figcaption>
+								</figure>
+								<div class="social-btn-container">
+									<div class="team-socail-btn">
+										<span id="graphbtn" class="social-btn-box facebook-btn-container">
+											<a class="facebook-btn">
+												<i class="glyphicon glyphicon-stats"></i>
+											</a><!-- /.facebook-btn -->
+										</span>
+										<!-- /.social-btn-box -->
+
+										<!-- <span id="calendarbtn" class="social-btn-box twitter-btn-container">
+											<a class="twitter-btn">
+												<i class="glyphicon glyphicon-calendar"></i>
+											</a>
+										</span> -->
+
+										<span id="historybtn" class="social-btn-box linkedin-btn-container">
+											<a class="linkedin-btn">
+												<i class="glyphicon glyphicon-time"></i>
+											</a><!-- /.twitter-btn -->
+										</span>
+										<!-- /.social-btn-box -->
+
+									</div>
+									<!-- /.team-socail-btn -->
+								</div>
+								<!-- /.social-btn-container -->
+							</div>
+							<!-- /.team-member -->
+						</div>
+						<!-- /.col-sm-4 -->
+
+
+
+
+
+						<!-- Graph -->
+						<div class="col-sm-offset-4 ">
+							<h2 id="graph">Graph</h2>
+						</div>
+
+						<!-- Calendar -->
+						<!-- <div id="calendar" class="col-sm-offset-4">
+							<h2>Calendar</h2>
+						</div> -->
+
+						<!-- History -->
+						<div id="history" class="col-sm-offset-4">
+							<h2>History</h2>
+							<div class="pre-scrollable">
+								<form class="news-letter" method="post">
+									<p class="alert-success"></p>
+									<p class="alert-warning"></p>
+
+									<div class="subscribe-hide">
+										<input class="form-control" type="email" id="subscribe-email" name="subscribe-email" placeholder="DD/MM/YY" required>
+										<button type="submit" id="subscribe-submit" class="btn"><i class="glyphicon glyphicon-search"></i></button>
+										<span id="subscribe-loading" class="btn"> <i class="fa fa-refresh fa-spin"></i> </span>
+										<div class="subscribe-error"></div>
+									</div>
+									<!-- /.subscribe-hide -->
+									<div class="subscribe-message"></div>
+								</form>
+								<!-- /.news-letter -->
+
+								<table id="info" class="table">
+									<thead>
+										<tr>
+											<th>Date</th>
+											<th>Time</th>
+											<th>BPM</th>
+											<th>minBPM</th>
+											<th>maxBPM</th>
+										</tr>
+									</thead>
+									<tbody id="infobody">
+
+									</tbody>
+								</table>
+							</div>
+
+						</div>
+
+
+					</div>
+					<!-- /.row -->
+				</div>
+				<!-- /.team-container -->
+
+				<div class="next-section">
+					<a class="go-to-subscribe"><span></span></a>
+				</div>
+				<!-- /.next-section -->
+
+			</div>
+			<!-- /.container -->
+		</div>
+		<!-- /.pattern -->
+
+
+	</section>
+	<!-- /#about -->
+	<!-- About Us Section End -->
+
+
+
+	<!-- Subscribe Section -->
+	<section id="subscribe" class="section-style" data-background-image="images/background/wall.jpg">
+		<div class="pattern height-resize">
+			<div class="container">
+				<h3 class="section-name">
+					<span>
+						Where is Arma ?
+					</span>
+				</h3>
+				<!-- /.section-name -->
+				<h2 class="section-title">
+					Arma is here !!
+				</h2>
+				<!-- /.Section-title  -->
+				<br />
+				<div id="map"></div>
+
+				<div class="next-section">
+					<a class="go-to-contact"><span></span></a>
+				</div>
+				<!-- /.next-section -->
+
+			</div>
+			<!-- /.container -->
+		</div>
+		<!-- /.pattern -->
+
+	</section>
+	<!-- /#subscribe -->
+	<!-- Subscribe Section End -->
+
+
+
+	<!-- Contact Section -->
+	<section id="contact" class="section-style" data-background-image="images/background/smile.jpg">
+		<div class="pattern height-resize">
+			<div class="container">
+				<h3 class="section-name">
+						<span>
+							About Arma
+						</span>
+					</h3>
+				<!-- /.section-name -->
+				<h2 class="section-title">
+						Get in Touch
+					</h2>
+				<!-- /.Section-title  -->
+
+				<form id="contact-form" action="email.php" method="post" class="clearfix">
+					<div class="contact-box-hide">
+						<div class="col-sm-6">
+							<input type="text" class="form-control" id="first_name" name="first_name" required placeholder="FIRST NAME | MRS. ARMA">
+							<span class="first-name-error"></span>
+						</div>
+						<div class="col-sm-6">
+							<input type="text" class="form-control" id="last_name" name="last_name" required placeholder="LAST NAME | ARKONG">
+							<span class="last-name-error"></span>
+						</div>
+						<div class="col-sm-6">
+							<input type="email" class="form-control" id="contact_email" name="contact_email" required placeholder="AGE | 83">
+							<span class="contact-email-error"></span>
+						</div>
+						<div class="col-sm-6">
+							<input type="text" class="form-control" id="subject" name="contact_subject" required placeholder="TEL | 08X-XXX-XXXX">
+							<span class="contact-subject-error"></span>
+						</div>
+						<div class="col-sm-10">
+							<textarea class="form-control" rows="5" id="message" name="message" required placeholder="CASE HISTORY : LOVE SICK"></textarea>
+							<span class="contact-message-error"></span>
+						</div>
+						<div class="col-sm-2">
+							<button id="contact-submit" class="btn custom-btn col-xs-12" type="submit" name="submit"><i class="fa fa-rocket"></i></button>
+							<span id="contact-loading" class="btn custom-btn col-xs-12"> <i class="fa fa-refresh fa-spin"></i> </span>
+						</div>
+					</div>
+					<!-- /.contact-box-hide -->
+					<div class="contact-message"></div>
+
+				</form>
+				<!-- /#contact-form -->
+
+				<div class="next-section">
+					<a class="go-to-page-top"><span></span></a>
+				</div>
+				<!-- /.next-section -->
+
+			</div>
+			<!-- /.container -->
+		</div>
+		<!-- /.pattern -->
+
+	</section>
+	<!-- /#contact -->
+	<!-- Contact Section End -->
+
+
+
+	<!-- Footer Section -->
+	<footer id="footer-section">
+		<p class="copyright">
+			&copy; Arma Project 2016, August 4th
+		</p>
+	</footer>
+	<!-- Footer Section End -->
+
+
+	<!-- jQuery Library -->
+	<script type="text/javascript" src="assets/js/jquery-2.1.0.min.js"></script>
+	<!-- Modernizr js -->
+	<script type="text/javascript" src="assets/js/modernizr-2.8.0.min.js"></script>
+	<!-- Plugins -->
+	<script type="text/javascript" src="assets/js/plugins.js"></script>
+	<!-- Custom JavaScript Functions -->
+	<script type="text/javascript" src="assets/js/functions.js"></script>
+	<!-- Custom JavaScript Functions -->
+	<script type="text/javascript" src="assets/js/jquery.ajaxchimp.min.js"></script>
+
+	<script type="text/javascript">
+		// LGP effect
+		// var lpgR = 80;
+		//
+		// function rankLpg(lpgR) {
+		// 	if (lpgR > 80) {
+		// 		$('#lpgBlock').addClass('animated infinite flash');
+		// 		$('#lpgBlock').addClass('changeToRed');
+		// 	} else if (lpgR > 75) {
+		// 		$('#lpgBlock').removeClass('animated infinite flash');
+		// 		$('#lpgBlock').addClass('changeToYellow');
+		// 	} else if (lpgR > 0) {
+		// 		$('#lpgBlock').removeClass('animated infinite flash');
+		// 		$('#lpgBlock').addClass('changeToGreen');
+		// 	}
+		// }
+		// rankLpg();
+
+		// HeartRate
+
+
+
+
+		// Falling
+		// var falling = 90;
+
+		// function rankFall() {
+		// 	if (falling > 100) {
+		// 		$('#fallBlock').addClass('animated infinite flash');
+		// 		$('#fallBlock').addClass('changeToRed');
+		// 	} else {
+		// 		$('#fallBlock').removeClass('animated infinite flash');
+		// 		$('#fallBlock').addClass('changeToWhite');
+		// 	}
+		//
+		// }
+		// rankFall();
+
+
+		// function
+		function hideGraph(G) {
+			$('#' + G).hide();
+			$('.team-container .col-sm-4').addClass('hide-graph').removeClass('show-graph');
+			// var myElement = document.querySelector(".team-container .col-sm-4");
+			// myElement.style.float = "none";
+			// myElement.style.marginLeft = "auto";
+			// myElement.style.marginRight = "auto";
+		}
+
+		function showGraph(G) {
+			$('.team-container .col-sm-4').removeClass('hide-graph').addClass('show-graph');
+			$('#' + G).show();
+		}
+		// initial
+		var checkGraph = false;
+		var checkHistory = false;
+		hideGraph('graph');
+		hideGraph('history');
+		$('#graphbtn').click(
+			function() {
+				if (checkGraph) {
+					hideGraph('graph');
+					checkGraph = false;
+				} else {
+					hideGraph('calendar');
+					hideGraph('history');
+					showGraph('graph');
+					checkhistory = false;
+					checkGraph = true;
+				}
+			}
+		);
+
+		$('#historybtn').click(
+			function() {
+				if (checkHistory) {
+					hideGraph('history');
+					checkHistory = false;
+				} else {
+					hideGraph('graph');
+					showGraph('history');
+					checkGraph = false;
+					checkHistory = true;
+				}
+			}
+		);
+	</script>
+	<script type="text/javascript" src="assets/js/data.js"></script>
+	<script type="text/javascript" src="assets/js/uigenerate.js"></script>
+</body>
+
+</html>
